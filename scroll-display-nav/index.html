@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+    .wrapper {
+      height: 150em;
+      background-color: rgb(67, 7, 116);
+    }
+    .nav {
+      text-align: center;
+      background-color: white;
+      padding: 10px 0;
+      position: relative;
+      top: -100px;
+      transition: top 1s;
+    }
+    .showNav {
+      position: sticky !important;
+      top: -1px !important;
+      transition: top 1s;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="nav">
+      <h1>NAV</h1>
+    </div>
+
+  </div>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(document).scroll(function() {
+          if($(window).scrollTop() > 50) {
+              $(".nav").addClass("showNav");
+          }else{
+            $(".nav").removeClass("showNav");
+          }
+      });
+  });
+  </script>
+  
+</body>
+</html>
