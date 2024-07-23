@@ -7,3 +7,7 @@ ul#comp-lyvyq703itemsContainer li {
 ul#comp-lyvyq703itemsContainer {
     text-transform: uppercase;
 }
+
+#columnStrip10 {
+    border-bottom: 5px solid red;
+}
