@@ -4,7 +4,7 @@
     border-width: 0 !important;
     background-color: #f5f4fe !important;
     border-radius: 5px !important;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05); !important;
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .1)) !important;
 }
 
 ul#comp-lyvyq703itemsContainer li {
