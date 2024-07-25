@@ -1,10 +1,13 @@
 /* CSS file for Devine Inspired Care */
 
 .gallery-item-container {
-    border-width: 0 !important;
-    background-color: #f5f4fe !important;
+    border-width: 0 !important;    
     border-radius: 5px !important;
     box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .1)) !important;
+}
+
+.blog-post-description-font.blog-text-color.blog-card-background-color div {
+    background-color: #f5f4fe !important;
 }
 
 ul#comp-lyvyq703itemsContainer li {
