@@ -6,8 +6,12 @@
     box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .1)) !important;
 }
 
-.blog-post-description-font.blog-text-color.blog-card-background-color div {
+.c3VDPV .blog-post-post-list-description-color {
     background-color: #f5f4fe !important;
+}
+
+.blog-post-description-font.blog-text-color.blog-card-background-color div {
+    
 }
 
 ul#comp-lyvyq703itemsContainer li {
