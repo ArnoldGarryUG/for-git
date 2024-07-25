@@ -1,5 +1,9 @@
 /* CSS file for Devine Inspired Care */
 
+.gallery-item-container {
+    border-width: 0 !important;
+}
+
 ul#comp-lyvyq703itemsContainer li {
     font-weight: 600;
 }
