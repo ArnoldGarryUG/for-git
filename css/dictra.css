@@ -1,4 +1,8 @@
 /* CSS file for Devine Inspired Care */
+span#cookies_policy_description {
+    font-family: montserrat, sans-serif !important;
+}
+
 .consent-banner-root.MNUFxS.undefined.jUcJ2u, button.Wm1W5U.mq4ewo.Pg7AcP.Mm8Lm6 {
     background: #4ab0a6 !important;
 }
