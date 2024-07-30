@@ -1,5 +1,10 @@
 /* CSS file for Devine Inspired Care */
 
+div#comp-lz8llfas button span {
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+}
+
 button.sivrGDF.ss4_NrA.s__7TKfob.oSeDCUl--upgrade.oSeDCUl--wrapContent.sZHwM2b.osj33Ed--upgrade.sQQbFtR.srWu6xq {
     text-transform: uppercase;
     letter-spacing: 1px;
