@@ -1,5 +1,9 @@
 /* CSS file for Devine Inspired Care */
 
+div#comp-lz913sxg a {
+    border-bottom: 1px dashed #999;
+}
+
 button#minimized-chat {
     border-radius: 100px !important;
 }
