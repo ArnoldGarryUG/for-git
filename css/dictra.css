@@ -1,5 +1,9 @@
 /* CSS file for Devine Inspired Care */
 
+button#minimized-chat {
+    border-radius: 100px !important;
+}
+
 ul.NIXfHQ {
     text-transform: uppercase;
 }
