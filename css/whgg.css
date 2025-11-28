@@ -20,3 +20,7 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
     font-weight: 700 !important;
     letter-spacing: 2px !important;
 }
+
+a.snize-sticky-searchbox.snize-custom-widget-opener.top-right {
+    display: none;
+}
