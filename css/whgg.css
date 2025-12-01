@@ -24,3 +24,7 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 a.snize-sticky-searchbox.snize-custom-widget-opener.top-right {
     display: none;
 }
+
+.gallery-item-container {
+   border-radius: 30px important;
+}
