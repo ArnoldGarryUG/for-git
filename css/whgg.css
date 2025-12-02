@@ -35,7 +35,7 @@ a.snize-sticky-searchbox.snize-custom-widget-opener.top-right {
     text-transform: uppercase;
 }
 
-.hnxUtZ:hover, .syX60BH.oKCHbsX---priority-7-primary:hover {
+.hnxUtZ:hover, .syX60BH:active.oKCHbsX---hoverStyle-9-underline, .syX60BH:hover.oKCHbsX---hoverStyle-9-underline {
     text-decoration: none !important;
     background-color: #8a191b !important;
     color: #fff !important;
