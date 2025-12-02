@@ -4,6 +4,14 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 */
 
+div#comp-mi50drky ul li a div span {
+     text-transform: uppercase !important;
+    color: #444 !important;
+    font-family: playfair-display-v2, serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+}
+
 #comp-mi50drky .style-mi85t2qy__root .StylableHorizontalMenu3372578893__menuItem .itemDepth02233374943__label
  {
     text-transform: uppercase !important;
