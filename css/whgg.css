@@ -4,6 +4,12 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 */
 
+.aAjhWb button:hover {
+    background-color: #8a191b !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
 #comp-mijjkrnu {
     margin-bottom: 80px !important;
 }
