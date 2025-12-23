@@ -5,11 +5,18 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 */
 
 .siy7RL button {
-    background-color: #8a191b !important;
+    background-color: #ffff !important;
+    border: 1px solid #8a191b !important;
+    color: #8a191b !important;
     border-radius: 100px !important;
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
     text-transform: uppercase !important;
+}
+
+.siy7RL button:hover {
+    background-color: #8a191b !important;
+    color: #fff !important;
 }
 
 .aAjhWb button:hover {
