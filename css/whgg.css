@@ -7,6 +7,9 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 .aAjhWb button:hover {
     background-color: #8a191b !important;
     color: #fff !important;
+}
+
+.aAjhWb button:hover a {
     text-decoration: none !important;
 }
 
