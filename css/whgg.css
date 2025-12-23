@@ -4,6 +4,14 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 */
 
+.siy7RL button {
+    background-color: #8a191b !important;
+    border-radius: 100px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    text-transform: uppercase !important;
+}
+
 .aAjhWb button:hover {
     background-color: #8a191b !important;
     color: #fff !important;
