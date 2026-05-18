@@ -1,1 +1,1 @@
-console.log("whgg.js loaded");
+console.log('whgg.js loaded');
