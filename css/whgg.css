@@ -9,8 +9,8 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 }
 
 button.neptune-btn.bottom_center.svelte-14dvnrc {
-    background-color: #d5d501 !important;
-    color: black !important;
+    background-color: red !important;
+    color: #fff !important;
     font-weight: 800;
     font-size: 18px;
 }
