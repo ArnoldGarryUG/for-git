@@ -4,6 +4,10 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 */
 
+.bottom_center.svelte-14dvnrc {
+    padding: 20px 35px !important;
+}
+
 [class*=' kudobuzz_icon']:before, [class^='kudobuzz_icon']:before {
     opacity: 1 !important;
 }
