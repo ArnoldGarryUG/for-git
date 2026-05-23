@@ -4,6 +4,10 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 */
 
+[class*=' kudobuzz_icon']:before, [class^='kudobuzz_icon']:before {
+    opacity: 1 !important;
+}
+
 button.neptune-btn.bottom_center.svelte-14dvnrc {
     background-color: #d5d501 !important;
     color: black !important;
