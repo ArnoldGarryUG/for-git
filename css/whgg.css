@@ -4,6 +4,13 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 */
 
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 768px) {
+     .comp-mn3n6vmb {
+        display: none;
+    }
+}
+
 button.neptune-btn.bottom_center.mobile-neptune-btn.svelte-14dvnrc {
     padding: 20px 40px !important;
     /*left: 25%;*/
