@@ -13,6 +13,7 @@ CSS File at: https://arnoldgarryug.github.io/for-git/css/whgg.css
 
 button.neptune-btn.bottom_center.mobile-neptune-btn.svelte-14dvnrc {
     padding: 20px 40px !important;
+     transform: translate(-50%, -50%);
     /*left: 25%;*/
 }
 
