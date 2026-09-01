@@ -5,6 +5,20 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.hidepostsfornow, .title, .parallax-funfactor {
+    display: none;
+}
+
+#bs-example-navbar-collapse-1 {
+	background-color: #fff !important
+}
+
+        .about-content .basic-info .info-list li {
+	text-transform: none; 
+}
+
+
 span.price {
     display: inline-block;
     font-weight: 700;
