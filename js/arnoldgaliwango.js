@@ -1,167 +1,47 @@
 <script>
-(function () {
 
-    const popup = document.getElementById('exitPopup');
-    const closeButton = document.getElementById('exitPopupClose');
+const overlay = document.getElementById('exitOverlay');
+  const closeBtn = document.getElementById('exitPopupClose');
+  let hasShown = false; // only show once per visit
 
-    if (!popup || !closeButton) return;
+  function showExitPopup() {
+    overlay.classList.add('active');
+    document.body.classList.add('popup-open');
+    hasShown = true;
+  }
 
-    let popupShown = false;
-    let hasScrolledDown = false;
-    let lastScrollPosition = window.scrollY;
+  function hideExitPopup() {
+    overlay.classList.remove('active');
+    document.body.classList.remove('popup-open');
+  }
 
-    // Prevent showing again during the same browser session
-    const alreadyShown = sessionStorage.getItem('exitPopupShown');
+  // Close on button click
+  closeBtn.addEventListener('click', hideExitPopup);
 
-    /*
-     * ==========================================
-     * SHOW POPUP
-     * ==========================================
-     */
-    function showExitPopup() {
+  // Close on clicking the dark background (outside the image)
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) hideExitPopup();
+  });
 
-        if (popupShown || alreadyShown) return;
+  // Close on Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') hideExitPopup();
+  });
 
-        popupShown = true;
-
-        popup.classList.add('active');
-        popup.setAttribute('aria-hidden', 'false');
-
-        // Remember that popup has been shown
-        sessionStorage.setItem('exitPopupShown', 'true');
-
-        // Prevent page from scrolling behind popup
-        document.body.style.overflow = 'hidden';
+  // Exit-intent detection: mouse leaves the top of the viewport (toward tabs/address bar)
+  document.addEventListener('mouseout', function (e) {
+    if (!hasShown && e.clientY <= 0 && !e.relatedTarget) {
+      showExitPopup();
     }
+  });
 
+  // Optional: also trigger on mobile when user is inactive for a while,
+  // since exit-intent via mouse doesn't work on touch devices.
+  // Uncomment to enable a timed fallback (e.g. 30 seconds):
+  
+  setTimeout(function () {
+    if (!hasShown) showExitPopup();
+  }, 30000);
+  
 
-    /*
-     * ==========================================
-     * CLOSE POPUP
-     * ==========================================
-     */
-    function closeExitPopup() {
-
-        popup.classList.remove('active');
-        popup.setAttribute('aria-hidden', 'true');
-
-        // Restore page scrolling
-        document.body.style.overflow = '';
-
-    }
-
-
-    /*
-     * ==========================================
-     * DESKTOP EXIT INTENT
-     * ==========================================
-     *
-     * Trigger when the mouse reaches the
-     * top 5 pixels of the browser window.
-     *
-     * This is primarily for desktop users.
-     */
-    document.addEventListener('mouseout', function (event) {
-
-        // Ignore users moving between elements
-        if (event.relatedTarget !== null) return;
-
-        // Mouse is leaving toward the top
-        if (event.clientY <= 5) {
-
-            showExitPopup();
-
-        }
-
-    });
-
-
-    /*
-     * ==========================================
-     * MOBILE / TABLET EXIT INTENT
-     * ==========================================
-     *
-     * Mobile devices don't have a mouse cursor,
-     * so we approximate exit intent by detecting:
-     *
-     * 1. Visitor scrolls at least 400px down
-     * 2. Visitor then scrolls back toward the top
-     * 3. Popup appears when they reach ~150px
-     *
-     */
-    window.addEventListener('scroll', function () {
-
-        const currentScrollPosition = window.scrollY;
-
-        // Visitor has gone sufficiently far down
-        if (currentScrollPosition > 400) {
-            hasScrolledDown = true;
-        }
-
-        // Visitor is scrolling back upward
-        const scrollingUp =
-            currentScrollPosition < lastScrollPosition;
-
-        // Trigger near the top after they have
-        // previously scrolled down
-        if (
-            hasScrolledDown &&
-            scrollingUp &&
-            currentScrollPosition < 150
-        ) {
-            showExitPopup();
-        }
-
-        lastScrollPosition = currentScrollPosition;
-
-    }, {
-        passive: true
-    });
-
-
-    /*
-     * ==========================================
-     * CLOSE BUTTON
-     * ==========================================
-     */
-    closeButton.addEventListener('click', function () {
-
-        closeExitPopup();
-
-    });
-
-
-    /*
-     * ==========================================
-     * CLICK OUTSIDE POPUP TO CLOSE
-     * ==========================================
-     */
-    popup.addEventListener('click', function (event) {
-
-        if (event.target === popup) {
-
-            closeExitPopup();
-
-        }
-
-    });
-
-
-    /*
-     * ==========================================
-     * ESC KEY TO CLOSE
-     * ==========================================
-     */
-    document.addEventListener('keydown', function (event) {
-
-        if (event.key === 'Escape') {
-
-            closeExitPopup();
-
-        }
-
-    });
-
-
-})();
 </script>
