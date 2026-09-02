@@ -5,177 +5,75 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ================================
-   EXIT INTENT POPUP
-================================ */
-
-.exit-popup-overlay {
+/* ---- Overlay (darkens the whole page) ---- */
+  #exitOverlay {
+    display: none;              /* hidden until triggered */
     position: fixed;
-    inset: 0;
-    z-index: 999999;
-
-    display: flex;
-    align-items: center;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);   /* darkness level - increase to 0.9 for darker */
+    z-index: 9998;
     justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+  }
 
-    padding: 20px;
+  #exitOverlay.active {
+    display: flex;
+  }
 
-    background: rgba(0, 0, 0, 0.72);
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 
-    opacity: 0;
-    visibility: hidden;
-
-    transition:
-        opacity 0.25s ease,
-        visibility 0.25s ease;
-
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-}
-
-.exit-popup-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.exit-popup {
+  /* ---- Popup box ---- */
+  #exitPopup {
     position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    animation: popIn 0.3s ease;
+  }
 
-    width: min(800px, 100%);
-    max-height: 95vh;
+  @keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+  }
 
-    background: #ffffff;
-    border-radius: 14px;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 25px 80px rgba(0, 0, 0, 0.45);
-
-    transform: scale(0.94) translateY(15px);
-
-    transition: transform 0.3s ease;
-}
-
-.exit-popup-overlay.active .exit-popup {
-    transform: scale(1) translateY(0);
-}
-
-/* Poster */
-
-.exit-popup-image {
+  #exitPopup img {
     display: block;
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0, 150, 255, 0.5);
+  }
 
-    width: 100%;
-    height: auto;
-
-    max-height: 80vh;
-
-    object-fit: contain;
-}
-
-/* Close button */
-
-.exit-popup-close {
+  /* ---- Close button ---- */
+  #exitPopupClose {
     position: absolute;
-
-    top: 10px;
-    right: 10px;
-
-    z-index: 5;
-
-    width: 38px;
-    height: 38px;
-
-    border: 0;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    color: #111;
+    border: none;
     border-radius: 50%;
-
-    background: rgba(0, 0, 0, 0.65);
-    color: #ffffff;
-
-    font-size: 28px;
+    font-size: 20px;
     line-height: 36px;
-
-    cursor: pointer;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-.exit-popup-close:hover {
-    background: rgba(0, 0, 0, 0.9);
-    transform: scale(1.08);
-}
-
-/* Contact bar */
-
-.exit-popup-contact {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 8px;
-
-    padding: 12px 15px;
-
-    background: #071b3d;
-
-    color: #ffffff;
-
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-
     text-align: center;
-}
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
 
-.exit-popup-contact a {
-    color: #39d353;
+  #exitPopupClose:hover {
+    background: #f0f0f0;
+  }
 
-    font-weight: 700;
-
-    text-decoration: none;
-}
-
-.exit-popup-contact a:hover {
-    text-decoration: underline;
-}
-
-/* Mobile */
-
-@media (max-width: 600px) {
-
-    .exit-popup-overlay {
-        padding: 12px;
-    }
-
-    .exit-popup {
-        width: 100%;
-        border-radius: 10px;
-    }
-
-    .exit-popup-image {
-        max-height: 75vh;
-    }
-
-    .exit-popup-contact {
-        flex-wrap: wrap;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .exit-popup-close {
-        width: 34px;
-        height: 34px;
-
-        font-size: 25px;
-        line-height: 32px;
-
-        top: 7px;
-        right: 7px;
-    }
-}
+  /* Prevent background scrolling while popup is open */
+  body.popup-open {
+    overflow: hidden;
+  }
 
 
 .hidepostsfornow, .title, .parallax-funfactor {
