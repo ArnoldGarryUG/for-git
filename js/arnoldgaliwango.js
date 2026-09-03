@@ -1,6 +1,4 @@
-<script>
-
-const overlay = document.getElementById('exitOverlay');
+  const overlay = document.getElementById('exitOverlay');
   const closeBtn = document.getElementById('exitPopupClose');
   let hasShown = false; // only show once per visit
 
@@ -43,5 +41,3 @@ const overlay = document.getElementById('exitOverlay');
     if (!hasShown) showExitPopup();
   }, 30000);
   
-
-</script>
