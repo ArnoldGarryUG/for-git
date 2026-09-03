@@ -703,6 +703,10 @@ div#reach_out .btn-primary:hover {
     font-family: 'Open Sans' !important;
 }
 
+.h1, h1 {
+    font-size: 30px;
+}
+
 /*** Responsive Styles Large Desktop And Above ***/
 @media all and (min-width: 1405px) {
   
