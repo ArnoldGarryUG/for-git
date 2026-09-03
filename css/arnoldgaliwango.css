@@ -144,10 +144,11 @@ div#reach_out .btn-primary {
     background: linear-gradient(135deg, rgba(33,150,243,1) 0%, rgba(55,140,245,1) 16%, rgba(74,131,247,1) 30%, rgba(94,121,249,1) 45%, rgba(120,109,251,1) 64%, rgba(144,97,253,1) 82%, rgba(168,85,255,1) 100%);
     border: none;
     border-radius: 25px;
-    padding: 8px 28px;
+    padding: 12px 28px;
     font-size: 15px;
     font-weight: 600;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 div#reach_out .btn-primary:hover {
