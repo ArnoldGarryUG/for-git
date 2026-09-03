@@ -16,6 +16,8 @@ html {
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.3s ease;
+	backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 
   #exitOverlay.active {
