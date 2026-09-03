@@ -701,6 +701,9 @@ div#reach_out .btn-primary:hover {
 
 .about-content .basic-info .person-title {
     font-family: 'Open Sans' !important;
+	font-size: 25px;
+	font-weight: 600;
+	
 }
 
 .h1, h1 {
