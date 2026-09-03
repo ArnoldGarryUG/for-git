@@ -707,6 +707,14 @@ div#reach_out .btn-primary:hover {
     font-size: 30px;
 }
 
+section#about {
+    padding-top: 20px;
+}
+
+
+
+/*** =========== Responsive Styles Start =========== ***/
+
 /*** Responsive Styles Large Desktop And Above ***/
 @media all and (min-width: 1405px) {
   
