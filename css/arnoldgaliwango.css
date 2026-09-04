@@ -718,8 +718,8 @@ section#about {
 #whatsapp-me {
     position: fixed;
     z-index: 100;
-    right: 3%;
-    bottom: 90px;
+    right: 3.1%;
+    bottom: 320px;
     -webkit-transition: all .3s;
     transition: all .3s;
     text-align: center;
@@ -727,6 +727,8 @@ section#about {
 
 a#whatsapp-me img {
     width: 220px;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
 }
 
 
