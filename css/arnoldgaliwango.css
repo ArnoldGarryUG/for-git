@@ -715,6 +715,15 @@ section#about {
     padding-top: 20px;
 }
 
+#whatsapp-me {
+    position: fixed;
+    z-index: 100;
+    right: 3%;
+    bottom: 40px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+}
 
 
 /*** =========== Responsive Styles Start =========== ***/
