@@ -719,10 +719,14 @@ section#about {
     position: fixed;
     z-index: 100;
     right: 3%;
-    bottom: 40px;
+    bottom: 90px;
     -webkit-transition: all .3s;
     transition: all .3s;
     text-align: center;
+}
+
+a#whatsapp-me img {
+    width: 220px;
 }
 
 
