@@ -863,8 +863,8 @@ a.my-trustpilot img {
         .testimonial-card .slick-prev,
         .testimonial-card .slick-next {
 
-            width: 25px;
-            height: 25px;
+            width: 45px;
+            height: 45px;
 
             z-index: 10;
         }
