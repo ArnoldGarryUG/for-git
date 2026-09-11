@@ -770,6 +770,10 @@ a.my-trustpilot img {
             color: #333;
         }
 
+		.trustpilot-badge img {
+    		width: 110px;
+		}
+
         .trustpilot-logo {
             font-weight: 700;
             color: #00b67a;
