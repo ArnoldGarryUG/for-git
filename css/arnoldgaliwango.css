@@ -873,12 +873,12 @@ a.my-trustpilot img {
 
         .testimonial-card .slick-prev {
             left: -35px;
-			margin-top: -30px;
+			margin-top: -20px;
         }
 
         .testimonial-card .slick-next {
             right: -35px;
-			margin-top: -30px;
+			margin-top: -20px;
         }
 
         .testimonial-card .slick-prev:before,
