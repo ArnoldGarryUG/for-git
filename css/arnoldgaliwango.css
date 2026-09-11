@@ -178,7 +178,7 @@ div#reach_out .btn-primary:hover {
 
 	.slick-prev:before, .slick-next:before {
     	font-size: 18px;
-    	top: 0;
+    	top: -1px;
     	position: relative;
 	}
 
