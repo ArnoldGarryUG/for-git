@@ -75,8 +75,8 @@ jQuery(document).ready(function($) {
                 /* Keep looping */
                 infinite: true,
                 /* Smooth fade transition */
-                fade: true,
-                cssEase: 'linear',
+                /* fade: true,
+                cssEase: 'linear',  */
                 /* Pause when user interacts */
                 pauseOnHover: true,
                 pauseOnFocus: true
