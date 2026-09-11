@@ -870,11 +870,11 @@ a.my-trustpilot img {
         }
 
         .testimonial-card .slick-prev {
-            left: -3px;
+            left: -35px;
         }
 
         .testimonial-card .slick-next {
-            right: -3px;
+            right: -35px;
         }
 
         .testimonial-card .slick-prev:before,
