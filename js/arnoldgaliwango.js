@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
                 /* Navigation */
                 arrows: true,
 
-                dots: true,
+                dots: false,
 
 
                 /* Keep looping */
