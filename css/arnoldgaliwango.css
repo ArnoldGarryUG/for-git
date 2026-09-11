@@ -1021,6 +1021,10 @@ a.my-trustpilot img {
  
 /*** Responsive Styles Smartphone Only ***/
 @media all and (max-width: 767px) {
+
+	.testimonial-widget {
+		display: none;
+	}
  
 }
  
