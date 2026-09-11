@@ -737,6 +737,246 @@ a.my-trustpilot img {
     width: 100%;
 }
 
+/* =====================================================
+           FLOATING TESTIMONIAL WIDGET
+           ===================================================== */
+
+        .testimonial-widget {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+
+            width: 330px;
+
+            z-index: 9999;
+        }
+
+
+        /* =====================================================
+           TRUSTPILOT RATING
+           ===================================================== */
+
+        .trustpilot-badge {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            gap: 8px;
+
+            margin-bottom: 8px;
+            padding-right: 8px;
+
+            font-size: 13px;
+            color: #333;
+        }
+
+        .trustpilot-logo {
+            font-weight: 700;
+            color: #00b67a;
+        }
+
+        .trustpilot-stars {
+            color: #00b67a;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+
+        /* =====================================================
+           REVIEW CARD
+           ===================================================== */
+
+        .testimonial-card {
+            background: #ffffff;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 4px 18px rgba(0, 0, 0, 0.14);
+
+            padding: 20px 20px 15px;
+
+            position: relative;
+        }
+
+
+        /* =====================================================
+           REVIEW SLIDES
+           ===================================================== */
+
+        .testimonial-slide {
+            padding: 0 5px;
+
+            min-height: 145px;
+
+            box-sizing: border-box;
+        }
+
+
+        /* =====================================================
+           REVIEW TITLE
+           ===================================================== */
+
+        .testimonial-title {
+            font-size: 17px;
+            font-weight: 700;
+
+            color: #222;
+
+            margin: 0 0 9px;
+        }
+
+
+        /* =====================================================
+           REVIEW TEXT
+           ===================================================== */
+
+        .testimonial-text {
+            font-size: 14px;
+            line-height: 1.55;
+
+            color: #555;
+
+            margin: 0 0 12px;
+        }
+
+
+        /* =====================================================
+           REVIEW AUTHOR
+           ===================================================== */
+
+        .testimonial-author {
+            font-size: 13px;
+            font-weight: 600;
+
+            color: #333;
+
+            margin: 0;
+        }
+
+
+        /* =====================================================
+           SLICK ARROWS
+           ===================================================== */
+
+        .testimonial-card .slick-prev,
+        .testimonial-card .slick-next {
+
+            width: 25px;
+            height: 25px;
+
+            z-index: 10;
+        }
+
+        .testimonial-card .slick-prev {
+            left: -3px;
+        }
+
+        .testimonial-card .slick-next {
+            right: -3px;
+        }
+
+        .testimonial-card .slick-prev:before,
+        .testimonial-card .slick-next:before {
+
+            color: #777;
+
+            font-size: 20px;
+
+            opacity: 0.75;
+        }
+
+        .testimonial-card .slick-prev:hover:before,
+        .testimonial-card .slick-next:hover:before {
+
+            opacity: 1;
+        }
+
+
+        /* =====================================================
+           SLICK DOTS
+           ===================================================== */
+
+        .testimonial-card .slick-dots {
+
+            position: relative;
+
+            bottom: auto;
+
+            margin-top: 10px;
+
+            height: 12px;
+        }
+
+        .testimonial-card .slick-dots li {
+
+            margin: 0 2px;
+        }
+
+        .testimonial-card .slick-dots li button:before {
+
+            font-size: 7px;
+
+            color: #bbb;
+
+            opacity: 1;
+        }
+
+        .testimonial-card .slick-dots li.slick-active button:before {
+
+            color: #555;
+        }
+
+
+        /* =====================================================
+           MOBILE
+           ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .testimonial-widget {
+
+                right: 12px;
+                bottom: 12px;
+
+                width: calc(100% - 24px);
+
+                max-width: 330px;
+            }
+
+            .testimonial-card {
+
+                padding: 17px 18px 13px;
+            }
+
+            .testimonial-slide {
+
+                min-height: 135px;
+            }
+
+            .testimonial-title {
+
+                font-size: 16px;
+            }
+
+            .testimonial-text {
+
+                font-size: 13px;
+            }
+
+            .trustpilot-badge {
+
+                font-size: 12px;
+
+                margin-bottom: 6px;
+            }
+
+            .trustpilot-stars {
+
+                font-size: 15px;
+            }
+        }
+
 
 /*** =========== Responsive Styles Start =========== ***/
 
