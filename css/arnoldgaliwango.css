@@ -879,12 +879,9 @@ a.my-trustpilot img {
 
         .testimonial-card .slick-prev:before,
         .testimonial-card .slick-next:before {
-
-            color: #777;
-
+            color: #fff;
             font-size: 20px;
-
-            opacity: 0.75;
+            opacity: 1;
         }
 
         .testimonial-card .slick-prev:hover:before,
