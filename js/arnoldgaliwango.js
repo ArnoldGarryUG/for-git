@@ -50,7 +50,7 @@
 
   // --- Mobile trigger: no reliable "leaving" signal on touch devices,
   // so show after a short period of inactivity instead ---
-  const MOBILE_DELAY_MS = 5000; // 15 seconds - adjust as needed
+  const MOBILE_DELAY_MS = 10000; // 15 seconds - adjust as needed
   if (isMobileWidth()) {
     setTimeout(function () {
       if (!hasShown) showExitPopup();
