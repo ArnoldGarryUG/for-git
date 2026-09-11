@@ -743,7 +743,7 @@ a.my-trustpilot img {
 
         .testimonial-widget {
             position: fixed;
-            right: 25px;
+            left: 25px;
             bottom: 25px;
 
             width: 330px;
