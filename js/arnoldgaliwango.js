@@ -56,3 +56,48 @@
       if (!hasShown) showExitPopup();
     }, MOBILE_DELAY_MS);
   }
+
+jQuery(document).ready(function($) {
+
+            $('.testimonial-slider').slick({
+
+                /* One review at a time */
+                slidesToShow: 1,
+
+                slidesToScroll: 1,
+
+
+                /* Automatically change reviews */
+                autoplay: true,
+
+                autoplaySpeed: 6000,
+
+
+                /* Animation speed */
+                speed: 500,
+
+
+                /* Navigation */
+                arrows: true,
+
+                dots: true,
+
+
+                /* Keep looping */
+                infinite: true,
+
+
+                /* Smooth fade transition */
+                fade: true,
+
+                cssEase: 'linear',
+
+
+                /* Pause when user interacts */
+                pauseOnHover: true,
+
+                pauseOnFocus: true
+
+            });
+
+        });
