@@ -778,6 +778,10 @@ a.my-trustpilot img {
     		margin-right: -8px;
 		}
 
+		.trustpilot-badge img:hover {
+			box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14);
+		}
+
         .trustpilot-logo {
             font-weight: 700;
             color: #00b67a;
