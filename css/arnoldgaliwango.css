@@ -730,6 +730,9 @@ a#whatsapp-me img {
     width: 220px;
     transform: rotate(-90deg);
     transform-origin: bottom right;
+	webkit-animation: at-ripple .6s linear infinite;
+    animation: at-ripple .6s linear infinite;
+    border-radius: 8px;
 }
 
 a.my-trustpilot img {
